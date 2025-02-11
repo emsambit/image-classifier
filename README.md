@@ -87,7 +87,7 @@ The project uses Docker Compose to manage the Flask and Streamlit services.
 
 ### **Prediction Output**
 ![Prediction Output]
-![image]([Screenshot%202025-02-11%20201926.jpg](https://github.com/emsambit/image-classifier/blob/main/flowerimage/Screenshot%202025-02-11%20201926.jpg))
+![image]([Screenshot%202025-02-11%20201926.jpg](https://github.com/emsambit/image-classifier/blob/main/flowerimage/Screenshot%202025-02-11%20201926.jpg)
 
 
 ---

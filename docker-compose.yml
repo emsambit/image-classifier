@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  flask_api:
+    build:
+      context: .
+      dockerfile: ./flask_app/Dockerfile
+    ports:
+      - "5000:5000"
+    # volumes:
+    #  - ./joblib:/app/joblib
+    restart: always
+
+  streamlit_app:
+    build:
+      context: ./streamlit_app
+    ports:
+      - "8501:8501"
+    depends_on:
+      - flask_api
+    # volumes:
+    #  - ../joblib:/app/joblib
+    restart: always

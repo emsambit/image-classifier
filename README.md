@@ -6,7 +6,19 @@ This project demonstrates an **Image Classifier** using a Flask API for predicti
 ## **Project Architecture**
 
 ### **Architecture Diagram**
-![Architecture Overview](https://via.placeholder.com/800x400?text=Architecture+Diagram)
+```
+[Streamlit UI]
+     |
+     v
+[Flask API]
+     |
+     v
+[Random Forest Model (iris_classifier.joblib)]
+     |
+     v
+[Prediction Returned to Streamlit]
+
+```
 
 1. **Model Training**: A `RandomForestClassifier` is trained using the Iris dataset and saved as a `.joblib` file.
 2. **Flask API**: Exposes a `/predict` endpoint to classify uploaded images.
